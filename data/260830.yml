@@ -1,0 +1,71 @@
+about:
+  description: Bitcoin Core integration/staging tree
+  license: MIT
+  homepage: https://bitcoincore.org/en/download
+  head: ca7162c
+  archived: false
+  latestVersion: v29.4
+  collectedAt: 2026-08-30T05:31:17Z
+timeline:
+  created: 2010-12-19
+  lastCommit: 2026-08-29
+  lastRelease: 2026-07-10
+popularity:
+  star: 90046
+  watcher: 4105
+  fork: 39359
+  release: 68
+  contributor: 1074
+  pullRequest: 8302
+  issue: 9184
+language:
+  C++: 14885530
+  Python: 4411929
+  C: 3348910
+  CMake: 276136
+  Shell: 213310
+  Makefile: 109087
+  Sage: 59880
+  M4: 55751
+  Rust: 41211
+  Assembly: 28405
+  HTML: 21831
+  Scheme: 20249
+  Cap'n Proto: 16569
+  Objective-C++: 5510
+  Nix: 5444
+  Dockerfile: 5092
+totalLine: 23504844
+recent:
+  last30d:
+    since: 2026-07-31
+    release: 0
+    mergedPR: 88
+    openPR: 100
+    closedIssue: 15
+    openIssue: 14
+    commit: 206
+  last90d:
+    since: 2026-06-01
+    release: 3
+    mergedPR: 267
+    openPR: 189
+    closedIssue: 45
+    openIssue: 32
+    commit: 863
+  last180d:
+    since: 2026-03-03
+    release: 5
+    mergedPR: 561
+    openPR: 263
+    closedIssue: 126
+    openIssue: 56
+    commit: 1785
+  last360d:
+    since: 2025-09-04
+    release: 12
+    mergedPR: 1186
+    openPR: 311
+    closedIssue: 382
+    openIssue: 103
+    commit: 3575
