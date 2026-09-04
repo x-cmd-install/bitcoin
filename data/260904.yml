@@ -7,18 +7,18 @@ about:
   head: 4519933
   archived: false
   latestVersion: v29.4
-  collectedAt: 2026-09-04T19:41:09Z
+  collectedAt: 2026-09-04T20:52:39Z
 timeline:
   created: 2010-12-19
   lastCommit: 2026-09-03
   lastRelease: 2026-07-10
 popularity:
-  star: 90097
-  watcher: 4108
+  star: 90096
+  watcher: 4107
   fork: 39373
   release: 68
   contributor: 1073
-  pullRequest: 25200
+  pullRequest: 25201
   issue: 9187
 language:
   C++: 14888489
@@ -43,7 +43,7 @@ recent:
     since: 2026-08-05
     release: 0
     mergedPR: 78
-    openPR: 107
+    openPR: 108
     closedIssue: 10
     openIssue: 17
     commit: 251
@@ -51,7 +51,7 @@ recent:
     since: 2026-07-06
     release: 3
     mergedPR: 172
-    openPR: 171
+    openPR: 172
     closedIssue: 27
     openIssue: 25
     commit: 567
@@ -59,7 +59,7 @@ recent:
     since: 2026-06-06
     release: 3
     mergedPR: 267
-    openPR: 199
+    openPR: 200
     closedIssue: 42
     openIssue: 36
     commit: 909
@@ -67,7 +67,7 @@ recent:
     since: 2026-03-08
     release: 5
     mergedPR: 558
-    openPR: 279
+    openPR: 280
     closedIssue: 119
     openIssue: 60
     commit: 1834
@@ -75,7 +75,7 @@ recent:
     since: 2025-09-09
     release: 11
     mergedPR: 1186
-    openPR: 328
+    openPR: 329
     closedIssue: 368
     openIssue: 106
     commit: 3624
@@ -83,18 +83,161 @@ recent:
     since: 2024-09-14
     release: 17
     mergedPR: 2280
-    openPR: 363
+    openPR: 364
     closedIssue: 874
     openIssue: 176
     commit: 7827
 total:
   release: 68
   mergedPR: 16883
-  openPR: 395
+  openPR: 396
   closedIssue: 8851
   openIssue: 336
   commit: 50421
 ---
+path: /home/runner/.x-repo/github.com/bitcoin/bitcoin
+collectedAt: 2026-09-04T20:52:55Z
+loc:
+  TypeScript:
+    code: 294394
+    comments: 0
+    blanks: 212
+    files: 100
+  Cpp:
+    code: 204790
+    comments: 29927
+    blanks: 31592
+    files: 848
+  CHeader:
+    code: 75829
+    comments: 32251
+    blanks: 15362
+    files: 665
+  Python:
+    code: 70361
+    comments: 10696
+    blanks: 14866
+    files: 378
+  Json:
+    code: 33670
+    comments: 0
+    blanks: 343
+    files: 107
+  C:
+    code: 29731
+    comments: 1644
+    blanks: 1472
+    files: 26
+  CMake:
+    code: 6352
+    comments: 787
+    blanks: 813
+    files: 88
+  Sh:
+    code: 2509
+    comments: 623
+    blanks: 493
+    files: 62
+  Makefile:
+    code: 1764
+    comments: 176
+    blanks: 317
+    files: 43
+  Bash:
+    code: 1387
+    comments: 518
+    blanks: 283
+    files: 23
+  Rust:
+    code: 1141
+    comments: 56
+    blanks: 72
+    files: 9
+  Autoconf:
+    code: 899
+    comments: 1760
+    blanks: 696
+    files: 20
+  AssemblyGAS:
+    code: 754
+    comments: 96
+    blanks: 75
+    files: 2
+  Svg:
+    code: 697
+    comments: 15
+    blanks: 8
+    files: 20
+  Scheme:
+    code: 442
+    comments: 36
+    blanks: 20
+    files: 3
+  Html:
+    code: 382
+    comments: 0
+    blanks: 19
+    files: 2
+  Automake:
+    code: 362
+    comments: 19
+    blanks: 52
+    files: 2
+  Fish:
+    code: 209
+    comments: 48
+    blanks: 50
+    files: 6
+  ObjectiveCpp:
+    code: 136
+    comments: 20
+    blanks: 32
+    files: 3
+  Nix:
+    code: 119
+    comments: 5
+    blanks: 6
+    files: 2
+  Dockerfile:
+    code: 70
+    comments: 20
+    blanks: 11
+    files: 2
+  Bitbake:
+    code: 51
+    comments: 7
+    blanks: 8
+    files: 2
+  Hex:
+    code: 32
+    comments: 0
+    blanks: 0
+    files: 32
+  Toml:
+    code: 31
+    comments: 4
+    blanks: 5
+    files: 4
+  ForgeConfig:
+    code: 15
+    comments: 33
+    blanks: 15
+    files: 1
+  Markdown:
+    code: 0
+    comments: 32933
+    blanks: 8873
+    files: 284
+  Text:
+    code: 0
+    comments: 2662
+    blanks: 5
+    files: 6
+total:
+  code: 727109
+  comments: 114491
+  blanks: 75778
+  files: 2740
 ---
 date: "2026-08-24"
 repo:
