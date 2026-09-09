@@ -2,12 +2,12 @@ about:
   description: "Bitcoin Core integration/staging tree"
   license: MIT
   homepage: https://bitcoincore.org/en/download
-  head: 4c9d55a
+  head: fc4f35f
   archived: false
   latestVersion: "v29.4"
   latestRelease: "v29.4"
   latestPrerelease: ""
-  collectedAt: 2026-09-09T06:21:08Z
+  collectedAt: 2026-09-09T20:38:58Z
 timeline:
   created: 2010-12-19
   lastCommit: 2026-09-09
@@ -15,20 +15,20 @@ timeline:
   lastRelease: 2026-07-10
   lastPrerelease: 
 popularity:
-  star: 90129
-  watcher: 4098
-  fork: 39378
+  star: 90136
+  watcher: 4097
+  fork: 39373
   release: 68
-  contributor: 1074
-  pullRequest: 25225
+  contributor: 1075
+  pullRequest: 25239
   issue: 9190
 language:
-  C++: 14902279
-  Python: 4432386
-  C: 3348910
+  C++: 14909019
+  Python: 4438499
+  C: 3362165
   CMake: 274182
-  Shell: 213622
-  Makefile: 109087
+  Shell: 214280
+  Makefile: 109247
   Sage: 59880
   M4: 55751
   Rust: 41211
@@ -39,66 +39,66 @@ language:
   Objective-C++: 5510
   Nix: 5444
   Dockerfile: 5092
-totalBytes: 23540408
+totalBytes: 23567334
 recent:
   last30d:
     since: 2026-08-10
     release: 0
-    mergedPR: 77
-    openPR: 101
-    closedIssue: 11
-    openIssue: 16
-    commit: 217
+    mergedPR: 82
+    openPR: 108
+    closedIssue: 12
+    openIssue: 15
+    commit: 243
   last60d:
     since: 2026-07-11
     release: 0
-    mergedPR: 170
-    openPR: 172
-    closedIssue: 30
-    openIssue: 25
-    commit: 555
+    mergedPR: 178
+    openPR: 176
+    closedIssue: 31
+    openIssue: 24
+    commit: 585
   last90d:
     since: 2026-06-11
     release: 3
-    mergedPR: 263
-    openPR: 199
-    closedIssue: 40
-    openIssue: 35
-    commit: 876
+    mergedPR: 271
+    openPR: 203
+    closedIssue: 41
+    openIssue: 34
+    commit: 910
   last180d:
     since: 2026-03-13
     release: 5
-    mergedPR: 543
+    mergedPR: 555
     openPR: 278
-    closedIssue: 118
-    openIssue: 60
-    commit: 1777
+    closedIssue: 120
+    openIssue: 58
+    commit: 1819
   last360d:
     since: 2025-09-14
     release: 11
-    mergedPR: 1195
-    openPR: 329
-    closedIssue: 366
-    openIssue: 103
-    commit: 3638
+    mergedPR: 1207
+    openPR: 328
+    closedIssue: 368
+    openIssue: 101
+    commit: 3680
   last720d:
     since: 2024-09-19
     release: 17
-    mergedPR: 2285
-    openPR: 364
-    closedIssue: 874
-    openIssue: 176
-    commit: 7823
+    mergedPR: 2297
+    openPR: 363
+    closedIssue: 876
+    openIssue: 174
+    commit: 7864
 total:
   release: 68
-  mergedPR: 16901
-  openPR: 396
-  closedIssue: 8854
-  openIssue: 336
-  commit: 50477
+  mergedPR: 16913
+  openPR: 395
+  closedIssue: 8856
+  openIssue: 334
+  commit: 50518
 ---
 path: /home/runner/.x-repo/github.com/bitcoin/bitcoin
-collectedAt: 2026-09-09T06:21:50Z
+collectedAt: 2026-09-09T20:39:42Z
 loc:
   TypeScript:
     code: 294394
@@ -106,19 +106,19 @@ loc:
     blanks: 212
     files: 100
   Cpp:
-    code: 204916
-    comments: 29977
-    blanks: 31621
+    code: 205149
+    comments: 29973
+    blanks: 31636
     files: 848
   CHeader:
-    code: 75855
-    comments: 32294
-    blanks: 15369
+    code: 75998
+    comments: 32307
+    blanks: 15350
     files: 665
   Python:
-    code: 70595
-    comments: 10748
-    blanks: 14925
+    code: 70665
+    comments: 10754
+    blanks: 14932
     files: 379
   Json:
     code: 33670
@@ -126,9 +126,9 @@ loc:
     blanks: 343
     files: 107
   C:
-    code: 29731
-    comments: 1644
-    blanks: 1472
+    code: 29827
+    comments: 1671
+    blanks: 1480
     files: 26
   CMake:
     code: 6305
@@ -136,14 +136,14 @@ loc:
     blanks: 809
     files: 87
   Sh:
-    code: 2510
-    comments: 623
+    code: 2513
+    comments: 626
     blanks: 493
     files: 62
   Makefile:
-    code: 1764
+    code: 1768
     comments: 176
-    blanks: 317
+    blanks: 318
     files: 43
   Bash:
     code: 1387
@@ -227,19 +227,19 @@ loc:
     files: 1
   Markdown:
     code: 0
-    comments: 32933
-    blanks: 8873
-    files: 284
+    comments: 32945
+    blanks: 8876
+    files: 285
   Text:
     code: 0
     comments: 2662
     blanks: 5
     files: 6
 total:
-  code: 727449
-  comments: 114633
-  blanks: 75869
-  files: 2740
+  code: 727998
+  comments: 114690
+  blanks: 75884
+  files: 2741
 ---
 date: "2026-09-07"
 repo:
