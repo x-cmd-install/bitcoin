@@ -7,7 +7,7 @@ about:
   latestVersion: "v29.4"
   latestRelease: "v29.4"
   latestPrerelease: ""
-  collectedAt: 2026-09-10T21:13:21Z
+  collectedAt: 2026-09-10T22:33:03Z
 timeline:
   created: 2010-12-19
   lastCommit: 2026-09-10
@@ -15,7 +15,7 @@ timeline:
   lastRelease: 2026-07-10
   lastPrerelease: 
 popularity:
-  star: 90146
+  star: 90145
   watcher: 4097
   fork: 39379
   release: 68
@@ -98,7 +98,7 @@ total:
   commit: 50530
 ---
 path: /home/runner/.x-repo/github.com/bitcoin/bitcoin
-collectedAt: 2026-09-10T21:14:07Z
+collectedAt: 2026-09-10T22:33:44Z
 loc:
   TypeScript:
     code: 294394
