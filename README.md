@@ -14,14 +14,14 @@ x install bitcoin
 
 ## Code insight
 
-Total: **720,788** lines of code across **2107** files in the top 5 languages.
+Total: **720,805** lines of code across **2107** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
 | TypeScript | 286,631 | 0 | 198 | 101 |
-| Cpp | 206,049 | 30,062 | 31,753 | 851 |
-| CHeader | 76,191 | 32,432 | 15,416 | 668 |
-| Python | 71,057 | 10,814 | 15,017 | 380 |
+| Cpp | 206,059 | 30,062 | 31,753 | 851 |
+| CHeader | 76,187 | 32,432 | 15,416 | 668 |
+| Python | 71,068 | 10,814 | 15,018 | 380 |
 | Json | 33,670 | 0 | 343 | 107 |
 
 ## OpenSSF Scorecard
@@ -47,22 +47,22 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 90,182 · **Forks**: 39,392 · **Open issues**: 9,202 · **Contributors**: 1,083
+- **Stars**: 90,190 · **Forks**: 39,395 · **Open issues**: 9,204 · **Contributors**: 1,083
 
 ## Totals (cumulative)
 
-- **Releases**: 68 · **Merged PRs**: 16964 · **Open PRs**: 393 · **Closed issues**: 8870 · **Open issues**: 332 · **Commits**: 50650
+- **Releases**: 68 · **Merged PRs**: 16967 · **Open PRs**: 397 · **Closed issues**: 8871 · **Open issues**: 333 · **Commits**: 50662
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-18 | 0 | 84 | 112 | 14 | 17 | 242 |
-| last60d | 2026-07-19 | 0 | 194 | 178 | 33 | 27 | 618 |
-| 90d | 2026-06-19 | 3 | 281 | 211 | 42 | 38 | 946 |
-| last180d | 2026-03-21 | 5 | 563 | 281 | 119 | 60 | 1853 |
-| 360d | 2025-09-22 | 11 | 1215 | 328 | 362 | 99 | 3761 |
-| last720d | 2024-09-27 | 17 | 2314 | 359 | 870 | 174 | 7918 |
+| 30d | 2026-08-19 | 0 | 83 | 110 | 14 | 16 | 253 |
+| last60d | 2026-07-20 | 0 | 195 | 179 | 34 | 28 | 629 |
+| 90d | 2026-06-20 | 3 | 283 | 214 | 43 | 39 | 957 |
+| last180d | 2026-03-22 | 5 | 563 | 285 | 119 | 61 | 1864 |
+| 360d | 2025-09-23 | 11 | 1214 | 332 | 360 | 100 | 3772 |
+| last720d | 2024-09-28 | 17 | 2315 | 363 | 871 | 175 | 7922 |
 
 ## Improve this data
 
@@ -73,4 +73,4 @@ Install metadata for bitcoin lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260917.yml` · 2026-09-17T06:47:34Z._
+_Snapshot: `data/card/260918.yml` · 2026-09-18T06:32:26Z._
