@@ -47,22 +47,22 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 90,211 · **Forks**: 39,400 · **Open issues**: 9,204 · **Contributors**: 1,083
+- **Stars**: 90,221 · **Forks**: 39,403 · **Open issues**: 9,205 · **Contributors**: 1,083
 
 ## Totals (cumulative)
 
-- **Releases**: 68 · **Merged PRs**: 16974 · **Open PRs**: 395 · **Closed issues**: 8871 · **Open issues**: 333 · **Commits**: 50681
+- **Releases**: 68 · **Merged PRs**: 16974 · **Open PRs**: 396 · **Closed issues**: 8871 · **Open issues**: 334 · **Commits**: 50681
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-21 | 0 | 82 | 100 | 13 | 14 | 197 |
-| last60d | 2026-07-22 | 0 | 195 | 172 | 33 | 26 | 558 |
-| 90d | 2026-06-22 | 3 | 284 | 211 | 43 | 38 | 890 |
-| last180d | 2026-03-24 | 5 | 564 | 282 | 116 | 61 | 1817 |
-| 360d | 2025-09-25 | 11 | 1214 | 331 | 357 | 100 | 3742 |
-| last720d | 2024-09-30 | 17 | 2321 | 362 | 867 | 175 | 7935 |
+| 30d | 2026-08-22 | 0 | 81 | 102 | 13 | 14 | 197 |
+| last60d | 2026-07-23 | 0 | 191 | 173 | 33 | 26 | 558 |
+| 90d | 2026-06-23 | 3 | 279 | 212 | 43 | 38 | 890 |
+| last180d | 2026-03-25 | 5 | 557 | 283 | 116 | 62 | 1817 |
+| 360d | 2025-09-26 | 11 | 1212 | 332 | 357 | 101 | 3742 |
+| last720d | 2024-10-01 | 17 | 2313 | 363 | 866 | 176 | 7924 |
 
 ## Improve this data
 
@@ -73,4 +73,4 @@ Install metadata for bitcoin lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260920.yml` · 2026-09-20T06:24:53Z._
+_Snapshot: `data/card/260921.yml` · 2026-09-21T06:36:52Z._
