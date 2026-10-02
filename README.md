@@ -14,7 +14,7 @@ x install bitcoin
 
 ## Code insight
 
-Total: **729,043** lines of code across **2115** files in the top 5 languages.
+Total: **729,064** lines of code across **2115** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
@@ -43,26 +43,26 @@ Lowest-scoring checks:
 ## Release
 
 - **Latest**: `v29.4` (2026-07-10)
-- **Last commit**: 2026-09-30
+- **Last commit**: 2026-10-01
 
 ## Popularity
 
-- **Stars**: 90,287 · **Forks**: 39,421 · **Open issues**: 9,218 · **Contributors**: 1,088
+- **Stars**: 90,304 · **Forks**: 39,423 · **Open issues**: 9,219 · **Contributors**: 1,088
 
 ## Totals (cumulative)
 
-- **Releases**: 68 · **Merged PRs**: 17022 · **Open PRs**: 419 · **Closed issues**: 8885 · **Open issues**: 333 · **Commits**: 50844
+- **Releases**: 68 · **Merged PRs**: 17025 · **Open PRs**: 424 · **Closed issues**: 8885 · **Open issues**: 334 · **Commits**: 50846
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-09-01 | 0 | 75 | 122 | 14 | 15 | 236 |
-| last60d | 2026-08-02 | 0 | 195 | 196 | 28 | 30 | 609 |
-| 90d | 2026-07-03 | 3 | 291 | 236 | 43 | 35 | 966 |
-| last180d | 2026-04-04 | 5 | 569 | 308 | 110 | 61 | 1922 |
-| 360d | 2025-10-06 | 11 | 1231 | 357 | 351 | 102 | 3847 |
-| last720d | 2024-10-11 | 16 | 2337 | 387 | 861 | 172 | 8000 |
+| 30d | 2026-09-02 | 0 | 73 | 123 | 13 | 15 | 237 |
+| last60d | 2026-08-03 | 0 | 193 | 199 | 28 | 31 | 610 |
+| 90d | 2026-07-04 | 3 | 291 | 241 | 43 | 36 | 967 |
+| last180d | 2026-04-05 | 5 | 571 | 313 | 109 | 61 | 1925 |
+| 360d | 2025-10-07 | 11 | 1224 | 362 | 349 | 103 | 3850 |
+| last720d | 2024-10-12 | 16 | 2338 | 392 | 857 | 173 | 7998 |
 
 ## Improve this data
 
@@ -73,4 +73,4 @@ Install metadata for bitcoin lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261001.yml` · 2026-10-01T07:20:36Z._
+_Snapshot: `data/card/261002.yml` · 2026-10-02T06:53:10Z._
