@@ -14,12 +14,12 @@ x install bitcoin
 
 ## Code insight
 
-Total: **732,845** lines of code across **2132** files in the top 5 languages.
+Total: **732,835** lines of code across **2132** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
 | TypeScript | 286,631 | 0 | 198 | 101 |
-| Cpp | 209,735 | 30,607 | 32,214 | 861 |
+| Cpp | 209,725 | 30,607 | 32,212 | 861 |
 | CHeader | 76,997 | 32,878 | 15,615 | 676 |
 | Python | 72,568 | 11,003 | 15,333 | 386 |
 | Json | 39,537 | 0 | 352 | 108 |
@@ -43,30 +43,30 @@ Lowest-scoring checks:
 ## Release
 
 - **Latest**: `v29.5` (2026-10-28)
-- **Last commit**: 2026-11-07
+- **Last commit**: 2026-11-09
 
 ## Popularity
 
-- **Stars**: 90,623 · **Forks**: 39,450 · **Open issues**: 9,270 · **Contributors**: 1,096
+- **Stars**: 90,646 · **Forks**: 39,456 · **Open issues**: 9,275 · **Contributors**: 1,096
 
 ## Totals (cumulative)
 
-- **Releases**: 72 · **Merged PRs**: 17240 · **Open PRs**: 419 · **Closed issues**: 8926 · **Open issues**: 344 · **Commits**: 51512
+- **Releases**: 72 · **Merged PRs**: 17242 · **Open PRs**: 433 · **Closed issues**: 8930 · **Open issues**: 345 · **Commits**: 51518
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-09 | 4 | 101 | 106 | 22 | 24 | 238 |
-| last60d | 2026-09-09 | 4 | 224 | 168 | 43 | 40 | 541 |
-| 90d | 2026-08-10 | 4 | 348 | 226 | 58 | 52 | 953 |
-| last180d | 2026-05-12 | 7 | 668 | 309 | 118 | 75 | 2078 |
-| 360d | 2025-11-13 | 12 | 1324 | 357 | 328 | 108 | 4071 |
-| last720d | 2024-11-18 | 19 | 2449 | 387 | 833 | 180 | 8304 |
+| 30d | 2026-10-11 | 4 | 101 | 116 | 25 | 22 | 244 |
+| last60d | 2026-09-11 | 4 | 218 | 179 | 45 | 41 | 547 |
+| 90d | 2026-08-12 | 4 | 339 | 239 | 61 | 53 | 959 |
+| last180d | 2026-05-14 | 7 | 663 | 320 | 120 | 75 | 2084 |
+| 360d | 2025-11-15 | 12 | 1322 | 371 | 330 | 109 | 4077 |
+| last720d | 2024-11-20 | 19 | 2444 | 401 | 832 | 181 | 8299 |
 
 ## Distribution status
 
-Reported by **215** distros on [repology.org](https://repology.org/project/bitcoin). **33** are ✅ on the latest upstream release, **134** are ⚠️ on an older version.
+Reported by **215** distros on [repology.org](https://repology.org/project/bitcoin). **37** are ✅ on the latest upstream release, **130** are ⚠️ on an older version.
 
 | Distro | Version | Status |
 |--------|---------|--------|
@@ -87,4 +87,4 @@ Install metadata for bitcoin lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261108.yml` · 2026-11-08T07:23:31Z._
+_Snapshot: `data/card/261110.yml` · 2026-11-10T09:06:51Z._
