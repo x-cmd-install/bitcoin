@@ -1,46 +1,57 @@
-- repo: aur
-  srcname: bitcoin-core-git
-  binname: bitcoin-core-git
-  visiblename: bitcoin-core-git
-  version: "20210115"
-  origversion: 20210115-1
-  status: rolling
-  summary: Bitcoin Core headless P2P node
-  maintainers:
-    - evabackstrom@aur
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: "31"
+  origversion: null
+  status: outdated
   licenses:
-    - MIT
-- repo: manjaro_testing
-  subrepo: extra
-  srcname: bitcoin
-  binname: bitcoin-qt
-  visiblename: bitcoin-qt
-  version: "32.1"
-  origversion: 32.1-1
-  status: newest
-  summary: Fully validating Bitcoin peer-to-peer network node - GUI
-  licenses:
-    - MIT
-- repo: chromebrew
-  srcname: bitcoin_core
-  visiblename: bitcoin_core
+    - MIT license
+  categories:
+    - Finance
+- repo: openbsd
+  srcname: net/bitcoin
+  binname: bitcoin
+  visiblename: net/bitcoin
   version: "32.1"
   origversion: null
   status: newest
-  summary: Bitcoin Core is a full Bitcoin client and builds the backbone of the network.
-  licenses:
-    - MIT
-- repo: manjaro_testing
-  subrepo: extra
-  srcname: bitcoin
-  binname: bitcoin-daemon
-  visiblename: bitcoin-daemon
+  summary: P2P payment system
+  maintainers:
+    - rsadowski@openbsd.org
+  categories:
+    - net
+- repo: openbsd
+  srcname: net/bitcoin
+  binname: bitcoin
+  visiblename: net/bitcoin
   version: "32.1"
-  origversion: 32.1-1
+  origversion: null
   status: newest
-  summary: Fully validating Bitcoin peer-to-peer network node - daemon
+  summary: P2P payment system
+  maintainers:
+    - rsadowski@openbsd.org
+  categories:
+    - net
+- repo: nix_stable_25_11
+  srcname: bitcoin
+  visiblename: bitcoin
+  version: "31.0"
+  origversion: null
+  status: outdated
+  summary: Peer-to-peer electronic cash system
+  maintainers:
+    - pavol@rusnak.io
+    - roconnor@r6.ca
   licenses:
     - MIT
+- repo: homebrew
+  srcname: bitcoin
+  visiblename: bitcoin
+  version: HEAD
+  origversion: null
+  status: rolling
+  summary: Decentralized, peer to peer payment network
 - repo: alpine_3_24
   subrepo: community
   srcname: bitcoin
@@ -78,17 +89,6 @@
   summary: Bitcoin CLI
   maintainers:
     - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: bitcoin
-  binname: bitcoin-daemon
-  visiblename: bitcoin-daemon
-  version: "32.1"
-  origversion: 32.1-1
-  status: newest
-  summary: Fully validating Bitcoin peer-to-peer network node - daemon
   licenses:
     - MIT
 - repo: alpine_3_24
@@ -279,12 +279,12 @@
 - repo: arch
   subrepo: extra
   srcname: bitcoin
-  binname: bitcoin-qt
-  visiblename: bitcoin-qt
+  binname: bitcoin-tx
+  visiblename: bitcoin-tx
   version: "32.1"
   origversion: 32.1-1
   status: newest
-  summary: Fully validating Bitcoin peer-to-peer network node - GUI
+  summary: Fully validating Bitcoin peer-to-peer network node - commandline tools
   licenses:
     - MIT
 - repo: arch
@@ -301,12 +301,12 @@
 - repo: arch
   subrepo: extra
   srcname: bitcoin
-  binname: bitcoin-tx
-  visiblename: bitcoin-tx
+  binname: bitcoin-qt
+  visiblename: bitcoin-qt
   version: "32.1"
   origversion: 32.1-1
   status: newest
-  summary: Fully validating Bitcoin peer-to-peer network node - commandline tools
+  summary: Fully validating Bitcoin peer-to-peer network node - GUI
   licenses:
     - MIT
 - repo: aur
@@ -388,6 +388,18 @@
   licenses:
     - MIT
 - repo: aur
+  srcname: bitcoin-core-git
+  binname: bitcoin-core-git
+  visiblename: bitcoin-core-git
+  version: "20210115"
+  origversion: 20210115-1
+  status: rolling
+  summary: Bitcoin Core headless P2P node
+  maintainers:
+    - evabackstrom@aur
+  licenses:
+    - MIT
+- repo: aur
   srcname: bitcoin-git
   binname: bitcoin-git
   visiblename: bitcoin-git
@@ -432,6 +444,15 @@
   origversion: null
   status: newest
   summary: A software-based online payment system
+- repo: chromebrew
+  srcname: bitcoin_core
+  visiblename: bitcoin_core
+  version: "32.1"
+  origversion: null
+  status: newest
+  summary: Bitcoin Core is a full Bitcoin client and builds the backbone of the network.
+  licenses:
+    - MIT
 - repo: epel_9
   srcname: bitcoin-core
   binnames:
@@ -474,28 +495,6 @@
     - MIT
   categories:
     - Unspecified
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: bitcoin
-  binname: bitcoin-tx
-  visiblename: bitcoin-tx
-  version: "32.1"
-  origversion: 32.1-1
-  status: newest
-  summary: Fully validating Bitcoin peer-to-peer network node - commandline tools
-  licenses:
-    - MIT
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: bitcoin
-  binname: bitcoin-qt
-  visiblename: bitcoin-qt
-  version: "32.1"
-  origversion: 32.1-1
-  status: newest
-  summary: Fully validating Bitcoin peer-to-peer network node - GUI
-  licenses:
-    - MIT
 - repo: fedora_42
   subrepo: updates
   srcname: bitcoin-core
@@ -535,6 +534,18 @@
     - MIT
   categories:
     - Unspecified
+- repo: nix_stable_25_11
+  srcname: bitcoind
+  visiblename: bitcoind
+  version: "31.0"
+  origversion: null
+  status: outdated
+  summary: Peer-to-peer electronic cash system
+  maintainers:
+    - pavol@rusnak.io
+    - roconnor@r6.ca
+  licenses:
+    - MIT
 - repo: fedora_44
   subrepo: release
   srcname: bitcoin-core
@@ -704,9 +715,9 @@
   srcname: bitcoin-core
   binname: bitcoin-core
   visiblename: bitcoin-core
-  version: "31.1"
+  version: "32.1"
   origversion: null
-  status: outdated
+  status: newest
   summary: Bitcoin peer-to-peer client
 - repo: homebrew
   srcname: bitcoin
@@ -714,13 +725,6 @@
   version: "32.1"
   origversion: null
   status: newest
-  summary: Decentralized, peer to peer payment network
-- repo: homebrew
-  srcname: bitcoin
-  visiblename: bitcoin
-  version: HEAD
-  origversion: null
-  status: rolling
   summary: Decentralized, peer to peer payment network
 - repo: homebrew_casks
   srcname: bitcoin-core
@@ -860,23 +864,23 @@
 - repo: manjaro_stable
   subrepo: extra
   srcname: bitcoin
-  binname: bitcoin-tx
-  visiblename: bitcoin-tx
-  version: "31.1"
-  origversion: 31.1-3
-  status: outdated
-  summary: Fully validating Bitcoin peer-to-peer network node - commandline tools
-  licenses:
-    - MIT
-- repo: manjaro_stable
-  subrepo: extra
-  srcname: bitcoin
   binname: bitcoin-daemon
   visiblename: bitcoin-daemon
   version: "31.1"
   origversion: 31.1-3
   status: outdated
   summary: Fully validating Bitcoin peer-to-peer network node - daemon
+  licenses:
+    - MIT
+- repo: manjaro_stable
+  subrepo: extra
+  srcname: bitcoin
+  binname: bitcoin-tx
+  visiblename: bitcoin-tx
+  version: "31.1"
+  origversion: 31.1-3
+  status: outdated
+  summary: Fully validating Bitcoin peer-to-peer network node - commandline tools
   licenses:
     - MIT
 - repo: manjaro_stable
@@ -893,6 +897,28 @@
 - repo: manjaro_testing
   subrepo: extra
   srcname: bitcoin
+  binname: bitcoin-qt
+  visiblename: bitcoin-qt
+  version: "32.1"
+  origversion: 32.1-1
+  status: newest
+  summary: Fully validating Bitcoin peer-to-peer network node - GUI
+  licenses:
+    - MIT
+- repo: manjaro_testing
+  subrepo: extra
+  srcname: bitcoin
+  binname: bitcoin-daemon
+  visiblename: bitcoin-daemon
+  version: "32.1"
+  origversion: 32.1-1
+  status: newest
+  summary: Fully validating Bitcoin peer-to-peer network node - daemon
+  licenses:
+    - MIT
+- repo: manjaro_testing
+  subrepo: extra
+  srcname: bitcoin
   binname: bitcoin-tx
   visiblename: bitcoin-tx
   version: "32.1"
@@ -901,28 +927,37 @@
   summary: Fully validating Bitcoin peer-to-peer network node - commandline tools
   licenses:
     - MIT
-- repo: nix_stable_25_11
+- repo: manjaro_unstable
+  subrepo: extra
   srcname: bitcoin
-  visiblename: bitcoin
-  version: "31.0"
-  origversion: null
-  status: outdated
-  summary: Peer-to-peer electronic cash system
-  maintainers:
-    - pavol@rusnak.io
-    - roconnor@r6.ca
+  binname: bitcoin-qt
+  visiblename: bitcoin-qt
+  version: "32.1"
+  origversion: 32.1-1
+  status: newest
+  summary: Fully validating Bitcoin peer-to-peer network node - GUI
   licenses:
     - MIT
-- repo: nix_stable_25_11
-  srcname: bitcoind
-  visiblename: bitcoind
-  version: "31.0"
-  origversion: null
-  status: outdated
-  summary: Peer-to-peer electronic cash system
-  maintainers:
-    - pavol@rusnak.io
-    - roconnor@r6.ca
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: bitcoin
+  binname: bitcoin-daemon
+  visiblename: bitcoin-daemon
+  version: "32.1"
+  origversion: 32.1-1
+  status: newest
+  summary: Fully validating Bitcoin peer-to-peer network node - daemon
+  licenses:
+    - MIT
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: bitcoin
+  binname: bitcoin-tx
+  visiblename: bitcoin-tx
+  version: "32.1"
+  origversion: 32.1-1
+  status: newest
+  summary: Fully validating Bitcoin peer-to-peer network node - commandline tools
   licenses:
     - MIT
 - repo: nix_stable_26_05
@@ -973,41 +1008,6 @@
     - roconnor@r6.ca
   licenses:
     - MIT
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
-  version: "31"
-  origversion: null
-  status: outdated
-  licenses:
-    - MIT license
-  categories:
-    - Finance
-- repo: openbsd
-  srcname: net/bitcoin
-  binname: bitcoin
-  visiblename: net/bitcoin
-  version: "31.1"
-  origversion: null
-  status: outdated
-  summary: P2P payment system
-  maintainers:
-    - rsadowski@openbsd.org
-  categories:
-    - net
-- repo: openbsd
-  srcname: net/bitcoin
-  binname: bitcoin
-  visiblename: net/bitcoin
-  version: "31.1"
-  origversion: null
-  status: outdated
-  summary: P2P payment system
-  maintainers:
-    - rsadowski@openbsd.org
-  categories:
-    - net
 - repo: openmamba
   subrepo: base
   srcname: bitcoin
@@ -1131,17 +1131,229 @@
   summary: cryptocurrency wallet and node for Bitcoin
   licenses:
     - MIT License
-- repo: npackd_stable
-  srcname: org.bitcoin.BitcoinQt
-  binname: org.bitcoin.BitcoinQt
-  visiblename: Bitcoin Core
-  version: 0.17.1
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: "25"
   origversion: null
-  status: outdated
+  status: legacy
   licenses:
     - MIT license
   categories:
     - Finance
+  vulnerable: true
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: "22"
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Finance
+  vulnerable: true
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: 0.20.1
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Finance
+  vulnerable: true
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: "0.21"
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Finance
+  vulnerable: true
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: 0.21.1
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Finance
+  vulnerable: true
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: "27"
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Finance
+  vulnerable: true
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: "28.1"
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Finance
+  vulnerable: true
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: "0.13"
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Finance
+  vulnerable: true
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: 0.13.2
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Finance
+  vulnerable: true
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: 0.17.0.1
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Finance
+  vulnerable: true
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: 0.17.1
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Finance
+  vulnerable: true
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: "0.18"
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Finance
+  vulnerable: true
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: 0.18.1
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Finance
+  vulnerable: true
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: 0.19.0.1
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Finance
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-openrc
+  visiblename: bitcoin-openrc
+  version: "23.0"
+  origversion: 23.0-r3
+  status: outdated
+  summary: Decentralized P2P electronic cash system (OpenRC init scripts)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-bench
+  visiblename: bitcoin-bench
+  version: "23.0"
+  origversion: 23.0-r3
+  status: outdated
+  summary: Bitcoin Benchmarking Tools)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin
+  visiblename: bitcoin
+  version: "23.0"
+  origversion: 23.0-r3
+  status: outdated
+  summary: Decentralized P2P electronic cash system
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-qt
+  visiblename: bitcoin-qt
+  version: "23.0"
+  origversion: 23.0-r3
+  status: outdated
+  summary: Bitcoin with a Qt frontend & QR Code support
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
   vulnerable: true
 - repo: alpine_3_17
   subrepo: community
@@ -1171,22 +1383,486 @@
   licenses:
     - MIT
   vulnerable: true
-- repo: npackd_stable
-  srcname: org.bitcoin.BitcoinQt
-  binname: org.bitcoin.BitcoinQt
-  visiblename: Bitcoin Core
-  version: "0.13"
-  origversion: null
-  status: legacy
+- repo: alpine_3_17
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-dev
+  visiblename: bitcoin-dev
+  version: "23.0"
+  origversion: 23.0-r3
+  status: outdated
+  summary: Decentralized P2P electronic cash system
+  maintainers:
+    - developer@it-offshore.co.uk
   licenses:
-    - MIT license
-  categories:
-    - Finance
+    - MIT
   vulnerable: true
-- repo: nix_stable_24_05
+- repo: alpine_3_17
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-tests
+  visiblename: bitcoin-tests
+  version: "23.0"
+  origversion: 23.0-r3
+  status: outdated
+  summary: Bitcoin & Bitcoin-QT Unit Tests)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-doc
+  visiblename: bitcoin-doc
+  version: "23.0"
+  origversion: 23.0-r3
+  status: outdated
+  summary: Decentralized P2P electronic cash system (documentation)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin
+  visiblename: bitcoin
+  version: "23.1"
+  origversion: 23.1-r0
+  status: outdated
+  summary: Decentralized P2P electronic cash system
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-bench
+  visiblename: bitcoin-bench
+  version: "23.1"
+  origversion: 23.1-r0
+  status: outdated
+  summary: Bitcoin Benchmarking Tools)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-cli
+  visiblename: bitcoin-cli
+  version: "23.1"
+  origversion: 23.1-r0
+  status: outdated
+  summary: Bitcoin CLI
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-dev
+  visiblename: bitcoin-dev
+  version: "23.1"
+  origversion: 23.1-r0
+  status: outdated
+  summary: Decentralized P2P electronic cash system
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-doc
+  visiblename: bitcoin-doc
+  version: "23.1"
+  origversion: 23.1-r0
+  status: outdated
+  summary: Decentralized P2P electronic cash system (documentation)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-openrc
+  visiblename: bitcoin-openrc
+  version: "23.1"
+  origversion: 23.1-r0
+  status: outdated
+  summary: Decentralized P2P electronic cash system (OpenRC init scripts)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-qt
+  visiblename: bitcoin-qt
+  version: "23.1"
+  origversion: 23.1-r0
+  status: outdated
+  summary: Bitcoin with a Qt frontend & QR Code support
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-tests
+  visiblename: bitcoin-tests
+  version: "23.1"
+  origversion: 23.1-r0
+  status: outdated
+  summary: Bitcoin & Bitcoin-QT Unit Tests)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-tx
+  visiblename: bitcoin-tx
+  version: "23.1"
+  origversion: 23.1-r0
+  status: outdated
+  summary: Bitcoin TX (Transaction Tool)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin
+  visiblename: bitcoin
+  version: "25.1"
+  origversion: 25.1-r1
+  status: outdated
+  summary: Decentralized P2P electronic cash system
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-bench
+  visiblename: bitcoin-bench
+  version: "25.1"
+  origversion: 25.1-r1
+  status: outdated
+  summary: Bitcoin Benchmarking Tools)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-cli
+  visiblename: bitcoin-cli
+  version: "25.1"
+  origversion: 25.1-r1
+  status: outdated
+  summary: Bitcoin CLI
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-dev
+  visiblename: bitcoin-dev
+  version: "25.1"
+  origversion: 25.1-r1
+  status: outdated
+  summary: Decentralized P2P electronic cash system
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-doc
+  visiblename: bitcoin-doc
+  version: "25.1"
+  origversion: 25.1-r1
+  status: outdated
+  summary: Decentralized P2P electronic cash system (documentation)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-openrc
+  visiblename: bitcoin-openrc
+  version: "25.1"
+  origversion: 25.1-r1
+  status: outdated
+  summary: Decentralized P2P electronic cash system (OpenRC init scripts)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-qt
+  visiblename: bitcoin-qt
+  version: "25.1"
+  origversion: 25.1-r1
+  status: outdated
+  summary: Bitcoin with a Qt frontend & QR Code support
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-tests
+  visiblename: bitcoin-tests
+  version: "25.1"
+  origversion: 25.1-r1
+  status: outdated
+  summary: Bitcoin & Bitcoin-QT Unit Tests)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-tx
+  visiblename: bitcoin-tx
+  version: "25.1"
+  origversion: 25.1-r1
+  status: outdated
+  summary: Bitcoin TX (Transaction Tool)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin
+  visiblename: bitcoin
+  version: "27.0"
+  origversion: 27.0-r0
+  status: outdated
+  summary: Decentralized P2P electronic cash system
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-bench
+  visiblename: bitcoin-bench
+  version: "27.0"
+  origversion: 27.0-r0
+  status: outdated
+  summary: Bitcoin Benchmarking Tools)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-cli
+  visiblename: bitcoin-cli
+  version: "27.0"
+  origversion: 27.0-r0
+  status: outdated
+  summary: Bitcoin CLI
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-dev
+  visiblename: bitcoin-dev
+  version: "27.0"
+  origversion: 27.0-r0
+  status: outdated
+  summary: Decentralized P2P electronic cash system
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-doc
+  visiblename: bitcoin-doc
+  version: "27.0"
+  origversion: 27.0-r0
+  status: outdated
+  summary: Decentralized P2P electronic cash system (documentation)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-openrc
+  visiblename: bitcoin-openrc
+  version: "27.0"
+  origversion: 27.0-r0
+  status: outdated
+  summary: Decentralized P2P electronic cash system (OpenRC init scripts)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-qt
+  visiblename: bitcoin-qt
+  version: "27.0"
+  origversion: 27.0-r0
+  status: outdated
+  summary: Bitcoin with a Qt frontend & QR Code support
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-tests
+  visiblename: bitcoin-tests
+  version: "27.0"
+  origversion: 27.0-r0
+  status: outdated
+  summary: Bitcoin & Bitcoin-QT Unit Tests)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-tx
+  visiblename: bitcoin-tx
+  version: "27.0"
+  origversion: 27.0-r0
+  status: outdated
+  summary: Bitcoin TX (Transaction Tool)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin
+  visiblename: bitcoin
+  version: "27.0"
+  origversion: 27.0-r1
+  status: outdated
+  summary: Decentralized P2P electronic cash system
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-bench
+  visiblename: bitcoin-bench
+  version: "27.0"
+  origversion: 27.0-r1
+  status: outdated
+  summary: Bitcoin Benchmarking Tools)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-cli
+  visiblename: bitcoin-cli
+  version: "27.0"
+  origversion: 27.0-r1
+  status: outdated
+  summary: Bitcoin CLI
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-dev
+  visiblename: bitcoin-dev
+  version: "27.0"
+  origversion: 27.0-r1
+  status: outdated
+  summary: Decentralized P2P electronic cash system
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: nix_stable_24_11
   srcname: bitcoin
   visiblename: bitcoin
-  version: "27.1"
+  version: "28.0"
   origversion: null
   status: outdated
   summary: Peer-to-peer electronic cash system
@@ -1196,538 +1872,6 @@
   licenses:
     - MIT
   vulnerable: true
-- repo: alpine_3_17
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-openrc
-  visiblename: bitcoin-openrc
-  version: "23.0"
-  origversion: 23.0-r3
-  status: outdated
-  summary: Decentralized P2P electronic cash system (OpenRC init scripts)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-bench
-  visiblename: bitcoin-bench
-  version: "23.0"
-  origversion: 23.0-r3
-  status: outdated
-  summary: Bitcoin Benchmarking Tools)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin
-  visiblename: bitcoin
-  version: "23.0"
-  origversion: 23.0-r3
-  status: outdated
-  summary: Decentralized P2P electronic cash system
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-qt
-  visiblename: bitcoin-qt
-  version: "23.0"
-  origversion: 23.0-r3
-  status: outdated
-  summary: Bitcoin with a Qt frontend & QR Code support
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-dev
-  visiblename: bitcoin-dev
-  version: "23.0"
-  origversion: 23.0-r3
-  status: outdated
-  summary: Decentralized P2P electronic cash system
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-tests
-  visiblename: bitcoin-tests
-  version: "23.0"
-  origversion: 23.0-r3
-  status: outdated
-  summary: Bitcoin & Bitcoin-QT Unit Tests)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-doc
-  visiblename: bitcoin-doc
-  version: "23.0"
-  origversion: 23.0-r3
-  status: outdated
-  summary: Decentralized P2P electronic cash system (documentation)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin
-  visiblename: bitcoin
-  version: "23.1"
-  origversion: 23.1-r0
-  status: outdated
-  summary: Decentralized P2P electronic cash system
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-bench
-  visiblename: bitcoin-bench
-  version: "23.1"
-  origversion: 23.1-r0
-  status: outdated
-  summary: Bitcoin Benchmarking Tools)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-cli
-  visiblename: bitcoin-cli
-  version: "23.1"
-  origversion: 23.1-r0
-  status: outdated
-  summary: Bitcoin CLI
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-dev
-  visiblename: bitcoin-dev
-  version: "23.1"
-  origversion: 23.1-r0
-  status: outdated
-  summary: Decentralized P2P electronic cash system
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-doc
-  visiblename: bitcoin-doc
-  version: "23.1"
-  origversion: 23.1-r0
-  status: outdated
-  summary: Decentralized P2P electronic cash system (documentation)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-openrc
-  visiblename: bitcoin-openrc
-  version: "23.1"
-  origversion: 23.1-r0
-  status: outdated
-  summary: Decentralized P2P electronic cash system (OpenRC init scripts)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-qt
-  visiblename: bitcoin-qt
-  version: "23.1"
-  origversion: 23.1-r0
-  status: outdated
-  summary: Bitcoin with a Qt frontend & QR Code support
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-tests
-  visiblename: bitcoin-tests
-  version: "23.1"
-  origversion: 23.1-r0
-  status: outdated
-  summary: Bitcoin & Bitcoin-QT Unit Tests)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-tx
-  visiblename: bitcoin-tx
-  version: "23.1"
-  origversion: 23.1-r0
-  status: outdated
-  summary: Bitcoin TX (Transaction Tool)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin
-  visiblename: bitcoin
-  version: "25.1"
-  origversion: 25.1-r1
-  status: outdated
-  summary: Decentralized P2P electronic cash system
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-bench
-  visiblename: bitcoin-bench
-  version: "25.1"
-  origversion: 25.1-r1
-  status: outdated
-  summary: Bitcoin Benchmarking Tools)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-cli
-  visiblename: bitcoin-cli
-  version: "25.1"
-  origversion: 25.1-r1
-  status: outdated
-  summary: Bitcoin CLI
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-dev
-  visiblename: bitcoin-dev
-  version: "25.1"
-  origversion: 25.1-r1
-  status: outdated
-  summary: Decentralized P2P electronic cash system
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-doc
-  visiblename: bitcoin-doc
-  version: "25.1"
-  origversion: 25.1-r1
-  status: outdated
-  summary: Decentralized P2P electronic cash system (documentation)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-openrc
-  visiblename: bitcoin-openrc
-  version: "25.1"
-  origversion: 25.1-r1
-  status: outdated
-  summary: Decentralized P2P electronic cash system (OpenRC init scripts)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-qt
-  visiblename: bitcoin-qt
-  version: "25.1"
-  origversion: 25.1-r1
-  status: outdated
-  summary: Bitcoin with a Qt frontend & QR Code support
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-tests
-  visiblename: bitcoin-tests
-  version: "25.1"
-  origversion: 25.1-r1
-  status: outdated
-  summary: Bitcoin & Bitcoin-QT Unit Tests)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-tx
-  visiblename: bitcoin-tx
-  version: "25.1"
-  origversion: 25.1-r1
-  status: outdated
-  summary: Bitcoin TX (Transaction Tool)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin
-  visiblename: bitcoin
-  version: "27.0"
-  origversion: 27.0-r0
-  status: outdated
-  summary: Decentralized P2P electronic cash system
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-bench
-  visiblename: bitcoin-bench
-  version: "27.0"
-  origversion: 27.0-r0
-  status: outdated
-  summary: Bitcoin Benchmarking Tools)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-cli
-  visiblename: bitcoin-cli
-  version: "27.0"
-  origversion: 27.0-r0
-  status: outdated
-  summary: Bitcoin CLI
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-dev
-  visiblename: bitcoin-dev
-  version: "27.0"
-  origversion: 27.0-r0
-  status: outdated
-  summary: Decentralized P2P electronic cash system
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-doc
-  visiblename: bitcoin-doc
-  version: "27.0"
-  origversion: 27.0-r0
-  status: outdated
-  summary: Decentralized P2P electronic cash system (documentation)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-openrc
-  visiblename: bitcoin-openrc
-  version: "27.0"
-  origversion: 27.0-r0
-  status: outdated
-  summary: Decentralized P2P electronic cash system (OpenRC init scripts)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-qt
-  visiblename: bitcoin-qt
-  version: "27.0"
-  origversion: 27.0-r0
-  status: outdated
-  summary: Bitcoin with a Qt frontend & QR Code support
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-tests
-  visiblename: bitcoin-tests
-  version: "27.0"
-  origversion: 27.0-r0
-  status: outdated
-  summary: Bitcoin & Bitcoin-QT Unit Tests)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-tx
-  visiblename: bitcoin-tx
-  version: "27.0"
-  origversion: 27.0-r0
-  status: outdated
-  summary: Bitcoin TX (Transaction Tool)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin
-  visiblename: bitcoin
-  version: "27.0"
-  origversion: 27.0-r1
-  status: outdated
-  summary: Decentralized P2P electronic cash system
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-bench
-  visiblename: bitcoin-bench
-  version: "27.0"
-  origversion: 27.0-r1
-  status: outdated
-  summary: Bitcoin Benchmarking Tools)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-cli
-  visiblename: bitcoin-cli
-  version: "27.0"
-  origversion: 27.0-r1
-  status: outdated
-  summary: Bitcoin CLI
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-dev
-  visiblename: bitcoin-dev
-  version: "27.0"
-  origversion: 27.0-r1
-  status: outdated
-  summary: Decentralized P2P electronic cash system
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
 - repo: alpine_3_21
   subrepo: community
   srcname: bitcoin
@@ -1854,11 +1998,178 @@
   licenses:
     - MIT
   vulnerable: true
-- repo: npackd_stable
-  srcname: org.bitcoin.BitcoinQt
-  binname: org.bitcoin.BitcoinQt
-  visiblename: Bitcoin Core
-  version: 0.13.2
+- repo: alpine_3_22
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-doc
+  visiblename: bitcoin-doc
+  version: "27.0"
+  origversion: 27.0-r3
+  status: outdated
+  summary: Decentralized P2P electronic cash system (documentation)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: nix_stable_24_11
+  srcname: bitcoind
+  visiblename: bitcoind
+  version: "28.0"
+  origversion: null
+  status: outdated
+  summary: Peer-to-peer electronic cash system
+  maintainers:
+    - pavol@rusnak.io
+    - roconnor@r6.ca
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-openrc
+  visiblename: bitcoin-openrc
+  version: "27.0"
+  origversion: 27.0-r3
+  status: outdated
+  summary: Decentralized P2P electronic cash system (OpenRC init scripts)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-qt
+  visiblename: bitcoin-qt
+  version: "27.0"
+  origversion: 27.0-r3
+  status: outdated
+  summary: Bitcoin with a Qt frontend & QR Code support
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-tests
+  visiblename: bitcoin-tests
+  version: "27.0"
+  origversion: 27.0-r3
+  status: outdated
+  summary: Bitcoin & Bitcoin-QT Unit Tests)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-tx
+  visiblename: bitcoin-tx
+  version: "27.0"
+  origversion: 27.0-r3
+  status: outdated
+  summary: Bitcoin TX (Transaction Tool)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin
+  visiblename: bitcoin
+  version: "27.0"
+  origversion: 27.0-r4
+  status: outdated
+  summary: Decentralized P2P electronic cash system
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-bench
+  visiblename: bitcoin-bench
+  version: "27.0"
+  origversion: 27.0-r4
+  status: outdated
+  summary: Bitcoin Benchmarking Tools)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-cli
+  visiblename: bitcoin-cli
+  version: "27.0"
+  origversion: 27.0-r4
+  status: outdated
+  summary: Bitcoin CLI
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-dev
+  visiblename: bitcoin-dev
+  version: "27.0"
+  origversion: 27.0-r4
+  status: outdated
+  summary: Decentralized P2P electronic cash system
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-doc
+  visiblename: bitcoin-doc
+  version: "27.0"
+  origversion: 27.0-r4
+  status: outdated
+  summary: Decentralized P2P electronic cash system (documentation)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-openrc
+  visiblename: bitcoin-openrc
+  version: "27.0"
+  origversion: 27.0-r4
+  status: outdated
+  summary: Decentralized P2P electronic cash system (OpenRC init scripts)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: 0.19.1
   origversion: null
   status: legacy
   licenses:
@@ -1866,71 +2177,15 @@
   categories:
     - Finance
   vulnerable: true
-- repo: alpine_3_22
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-doc
-  visiblename: bitcoin-doc
-  version: "27.0"
-  origversion: 27.0-r3
-  status: outdated
-  summary: Decentralized P2P electronic cash system (documentation)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-openrc
-  visiblename: bitcoin-openrc
-  version: "27.0"
-  origversion: 27.0-r3
-  status: outdated
-  summary: Decentralized P2P electronic cash system (OpenRC init scripts)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_22
+- repo: alpine_3_23
   subrepo: community
   srcname: bitcoin
   binname: bitcoin-qt
   visiblename: bitcoin-qt
   version: "27.0"
-  origversion: 27.0-r3
+  origversion: 27.0-r4
   status: outdated
   summary: Bitcoin with a Qt frontend & QR Code support
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-tests
-  visiblename: bitcoin-tests
-  version: "27.0"
-  origversion: 27.0-r3
-  status: outdated
-  summary: Bitcoin & Bitcoin-QT Unit Tests)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-tx
-  visiblename: bitcoin-tx
-  version: "27.0"
-  origversion: 27.0-r3
-  status: outdated
-  summary: Bitcoin TX (Transaction Tool)
   maintainers:
     - developer@it-offshore.co.uk
   licenses:
@@ -1939,126 +2194,41 @@
 - repo: alpine_3_23
   subrepo: community
   srcname: bitcoin
-  binname: bitcoin
+  binname: bitcoin-tests
+  visiblename: bitcoin-tests
+  version: "27.0"
+  origversion: 27.0-r4
+  status: outdated
+  summary: Bitcoin & Bitcoin-QT Unit Tests)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: community
+  srcname: bitcoin
+  binname: bitcoin-tx
+  visiblename: bitcoin-tx
+  version: "27.0"
+  origversion: 27.0-r4
+  status: outdated
+  summary: Bitcoin TX (Transaction Tool)
+  maintainers:
+    - developer@it-offshore.co.uk
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: nix_stable_25_05
+  srcname: bitcoin
   visiblename: bitcoin
-  version: "27.0"
-  origversion: 27.0-r4
+  version: "29.0"
+  origversion: null
   status: outdated
-  summary: Decentralized P2P electronic cash system
+  summary: Peer-to-peer electronic cash system
   maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-bench
-  visiblename: bitcoin-bench
-  version: "27.0"
-  origversion: 27.0-r4
-  status: outdated
-  summary: Bitcoin Benchmarking Tools)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-cli
-  visiblename: bitcoin-cli
-  version: "27.0"
-  origversion: 27.0-r4
-  status: outdated
-  summary: Bitcoin CLI
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-dev
-  visiblename: bitcoin-dev
-  version: "27.0"
-  origversion: 27.0-r4
-  status: outdated
-  summary: Decentralized P2P electronic cash system
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-doc
-  visiblename: bitcoin-doc
-  version: "27.0"
-  origversion: 27.0-r4
-  status: outdated
-  summary: Decentralized P2P electronic cash system (documentation)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-openrc
-  visiblename: bitcoin-openrc
-  version: "27.0"
-  origversion: 27.0-r4
-  status: outdated
-  summary: Decentralized P2P electronic cash system (OpenRC init scripts)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-qt
-  visiblename: bitcoin-qt
-  version: "27.0"
-  origversion: 27.0-r4
-  status: outdated
-  summary: Bitcoin with a Qt frontend & QR Code support
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-tests
-  visiblename: bitcoin-tests
-  version: "27.0"
-  origversion: 27.0-r4
-  status: outdated
-  summary: Bitcoin & Bitcoin-QT Unit Tests)
-  maintainers:
-    - developer@it-offshore.co.uk
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: community
-  srcname: bitcoin
-  binname: bitcoin-tx
-  visiblename: bitcoin-tx
-  version: "27.0"
-  origversion: 27.0-r4
-  status: outdated
-  summary: Bitcoin TX (Transaction Tool)
-  maintainers:
-    - developer@it-offshore.co.uk
+    - pavol@rusnak.io
+    - roconnor@r6.ca
   licenses:
     - MIT
   vulnerable: true
@@ -2078,6 +2248,18 @@
     - MIT
   categories:
     - Networking/Other
+  vulnerable: true
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: "0.20"
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Finance
   vulnerable: true
 - repo: epel_8
   srcname: bitcoin-core
@@ -2151,18 +2333,6 @@
     - MIT
   categories:
     - Unspecified
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.bitcoin.BitcoinQt
-  binname: org.bitcoin.BitcoinQt
-  visiblename: Bitcoin Core
-  version: "0.17"
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Finance
   vulnerable: true
 - repo: fedora_40
   subrepo: release
@@ -2333,6 +2503,19 @@
   categories:
     - net-p2p
   vulnerable: true
+- repo: nix_stable_25_05
+  srcname: bitcoind
+  visiblename: bitcoind
+  version: "29.0"
+  origversion: null
+  status: outdated
+  summary: Peer-to-peer electronic cash system
+  maintainers:
+    - pavol@rusnak.io
+    - roconnor@r6.ca
+  licenses:
+    - MIT
+  vulnerable: true
 - repo: mageia_9
   subrepo: core/release
   srcname: bitcoin
@@ -2354,6 +2537,19 @@
     - Office/Finance
   vulnerable: true
 - repo: nix_stable_24_05
+  srcname: bitcoin
+  visiblename: bitcoin
+  version: "27.1"
+  origversion: null
+  status: outdated
+  summary: Peer-to-peer electronic cash system
+  maintainers:
+    - pavol@rusnak.io
+    - roconnor@r6.ca
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: nix_stable_24_05
   srcname: bitcoind
   visiblename: bitcoind
   version: "27.1"
@@ -2366,58 +2562,6 @@
   licenses:
     - MIT
   vulnerable: true
-- repo: nix_stable_24_11
-  srcname: bitcoin
-  visiblename: bitcoin
-  version: "28.0"
-  origversion: null
-  status: outdated
-  summary: Peer-to-peer electronic cash system
-  maintainers:
-    - pavol@rusnak.io
-    - roconnor@r6.ca
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: nix_stable_24_11
-  srcname: bitcoind
-  visiblename: bitcoind
-  version: "28.0"
-  origversion: null
-  status: outdated
-  summary: Peer-to-peer electronic cash system
-  maintainers:
-    - pavol@rusnak.io
-    - roconnor@r6.ca
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: nix_stable_25_05
-  srcname: bitcoin
-  visiblename: bitcoin
-  version: "29.0"
-  origversion: null
-  status: outdated
-  summary: Peer-to-peer electronic cash system
-  maintainers:
-    - pavol@rusnak.io
-    - roconnor@r6.ca
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: nix_stable_25_05
-  srcname: bitcoind
-  visiblename: bitcoind
-  version: "29.0"
-  origversion: null
-  status: outdated
-  summary: Peer-to-peer electronic cash system
-  maintainers:
-    - pavol@rusnak.io
-    - roconnor@r6.ca
-  licenses:
-    - MIT
-  vulnerable: true
 - repo: npackd_stable
   srcname: org.bitcoin.BitcoinQt
   binname: org.bitcoin.BitcoinQt
@@ -2454,46 +2598,10 @@
   categories:
     - Finance
   vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
-  version: 0.11.1
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Finance
-  vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
-  version: 0.11.2
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Finance
-  vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
-  version: 0.12.1
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Finance
-  vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
+- repo: npackd_stable
+  srcname: org.bitcoin.BitcoinQt
+  binname: org.bitcoin.BitcoinQt
+  visiblename: Bitcoin Core
   version: "0.13"
   origversion: null
   status: legacy
@@ -2502,10 +2610,10 @@
   categories:
     - Finance
   vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
+- repo: npackd_stable
+  srcname: org.bitcoin.BitcoinQt
+  binname: org.bitcoin.BitcoinQt
+  visiblename: Bitcoin Core
   version: 0.13.2
   origversion: null
   status: legacy
@@ -2514,11 +2622,11 @@
   categories:
     - Finance
   vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
-  version: 0.17.0.1
+- repo: npackd_stable
+  srcname: org.bitcoin.BitcoinQt
+  binname: org.bitcoin.BitcoinQt
+  visiblename: Bitcoin Core
+  version: "0.17"
   origversion: null
   status: legacy
   licenses:
@@ -2526,174 +2634,53 @@
   categories:
     - Finance
   vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
+- repo: npackd_stable
+  srcname: org.bitcoin.BitcoinQt
+  binname: org.bitcoin.BitcoinQt
+  visiblename: Bitcoin Core
   version: 0.17.1
   origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Finance
-  vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
-  version: "0.18"
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Finance
-  vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
-  version: 0.18.1
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Finance
-  vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
-  version: 0.19.0.1
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Finance
-  vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
-  version: 0.19.1
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Finance
-  vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
-  version: "0.20"
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Finance
-  vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
-  version: 0.20.1
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Finance
-  vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
-  version: "0.21"
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Finance
-  vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
-  version: 0.21.1
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Finance
-  vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
-  version: "22"
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Finance
-  vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
-  version: "25"
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Finance
-  vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
-  version: "27"
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Finance
-  vulnerable: true
-- repo: npackd_stable64
-  srcname: bitcoin-core64
-  binname: bitcoin-core64
-  visiblename: Bitcoin Core 64 bit
-  version: "28.1"
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Finance
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: updates/backports
-  srcname: bitcoin
-  visiblename: bitcoin
-  version: "26.0"
-  origversion: 26.0-bp155.2.3.1
   status: outdated
-  summary: P2P Digital Currency
   licenses:
-    - MIT
+    - MIT license
   categories:
-    - Productivity/Networking/Other
+    - Finance
+  vulnerable: true
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: 0.11.1
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Finance
+  vulnerable: true
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: 0.11.2
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Finance
+  vulnerable: true
+- repo: npackd_stable64
+  srcname: bitcoin-core64
+  binname: bitcoin-core64
+  visiblename: Bitcoin Core 64 bit
+  version: 0.12.1
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Finance
   vulnerable: true
 - repo: opensuse_leap_15_5
   subrepo: main/oss
@@ -2702,6 +2689,19 @@
   version: "22.0"
   origversion: 22.0-bp155.1.9
   status: legacy
+  summary: P2P Digital Currency
+  licenses:
+    - MIT
+  categories:
+    - Productivity/Networking/Other
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: updates/backports
+  srcname: bitcoin
+  visiblename: bitcoin
+  version: "26.0"
+  origversion: 26.0-bp155.2.3.1
+  status: outdated
   summary: P2P Digital Currency
   licenses:
     - MIT
