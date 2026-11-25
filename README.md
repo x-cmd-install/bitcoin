@@ -14,14 +14,14 @@ x install bitcoin
 
 ## Code insight
 
-Total: **733,779** lines of code across **2134** files in the top 5 languages.
+Total: **733,929** lines of code across **2136** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
 | TypeScript | 286,631 | 0 | 198 | 101 |
-| Cpp | 210,001 | 30,656 | 32,257 | 862 |
-| CHeader | 77,262 | 32,947 | 15,659 | 676 |
-| Python | 72,771 | 11,026 | 15,380 | 387 |
+| Cpp | 210,054 | 30,665 | 32,265 | 863 |
+| CHeader | 77,278 | 32,946 | 15,664 | 677 |
+| Python | 72,849 | 11,028 | 15,396 | 387 |
 | Json | 39,537 | 0 | 352 | 108 |
 
 ## OpenSSF Scorecard
@@ -43,40 +43,26 @@ Lowest-scoring checks:
 ## Release
 
 - **Latest**: `v30.5` (2026-11-20)
-- **Last commit**: 2026-11-23
+- **Last commit**: 2026-11-25
 
 ## Popularity
 
-- **Stars**: 90,753 · **Forks**: 39,460 · **Open issues**: 9,287 · **Contributors**: 1,097
+- **Stars**: 90,762 · **Forks**: 39,459 · **Open issues**: 9,289 · **Contributors**: 1,097
 
 ## Totals (cumulative)
 
-- **Releases**: 74 · **Merged PRs**: 17297 · **Open PRs**: 466 · **Closed issues**: 8937 · **Open issues**: 350 · **Commits**: 51680
+- **Releases**: 74 · **Merged PRs**: 17303 · **Open PRs**: 470 · **Closed issues**: 8938 · **Open issues**: 351 · **Commits**: 51705
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-25 | 6 | 87 | 133 | 19 | 21 | 209 |
-| last60d | 2026-09-25 | 6 | 209 | 205 | 46 | 42 | 500 |
-| 90d | 2026-08-26 | 6 | 332 | 251 | 65 | 52 | 885 |
-| last180d | 2026-05-28 | 9 | 674 | 342 | 117 | 78 | 2036 |
-| 360d | 2025-11-29 | 14 | 1341 | 400 | 319 | 110 | 4094 |
-| last720d | 2024-12-04 | 21 | 2453 | 433 | 831 | 184 | 8315 |
-
-## Distribution status
-
-Reported by **216** distros on [repology.org](https://repology.org/project/bitcoin). **46** are ✅ on the latest upstream release, **121** are ⚠️ on an older version.
-
-| Distro | Version | Status |
-|--------|---------|--------|
-| Arch | `32.1` | ✅ latest |
-| Homebrew | `32.1` | ✅ latest |
-| Fedora rawhide | `32.1` | ✅ latest |
-| Nix unstable | `32.1` | ✅ latest |
-| Void | `25.1` | ⚠️ outdated |
-| Alpine edge | `30.2` | ⚠️ outdated |
-| openSUSE Tumbleweed | `32.1` | ✅ latest |
+| 30d | 2026-10-26 | 6 | 78 | 141 | 19 | 20 | 219 |
+| last60d | 2026-09-26 | 6 | 205 | 210 | 47 | 42 | 517 |
+| 90d | 2026-08-27 | 6 | 330 | 254 | 66 | 52 | 909 |
+| last180d | 2026-05-29 | 9 | 675 | 348 | 116 | 79 | 2060 |
+| 360d | 2025-11-30 | 14 | 1344 | 405 | 320 | 111 | 4123 |
+| last720d | 2024-12-05 | 21 | 2454 | 437 | 830 | 184 | 8323 |
 
 ## Improve this data
 
@@ -87,4 +73,4 @@ Install metadata for bitcoin lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261124.yml` · 2026-11-24T11:47:21Z._
+_Snapshot: `data/card/261125.yml` · 2026-11-25T09:41:25Z._
