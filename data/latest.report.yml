@@ -2,12 +2,12 @@ about:
   description: "Bitcoin Core integration/staging tree"
   license: MIT
   homepage: https://bitcoincore.org/en/download
-  head: 0958604
+  head: afedb19
   archived: false
   latestVersion: "v30.5"
   latestRelease: "v30.5"
   latestPrerelease: ""
-  collectedAt: 2026-11-27T10:37:18Z
+  collectedAt: 2026-11-28T09:18:43Z
 timeline:
   created: 2010-12-19
   lastCommit: 2026-11-27
@@ -15,16 +15,16 @@ timeline:
   lastRelease: 2026-11-20
   lastPrerelease: 
 popularity:
-  star: 90772
-  watcher: 4063
-  fork: 39458
+  star: 90782
+  watcher: 4060
+  fork: 39449
   release: 74
   contributor: 1098
-  pullRequest: 25893
-  issue: 9288
+  pullRequest: 25902
+  issue: 9289
 language:
   C++: 15298669
-  Python: 4596082
+  Python: 4598765
   C: 3382243
   CMake: 279217
   Shell: 218735
@@ -39,66 +39,66 @@ language:
   Nix: 6383
   Objective-C++: 5510
   Dockerfile: 5092
-totalBytes: 24154709
+totalBytes: 24157392
 recent:
   last30d:
-    since: 2026-10-28
-    release: 6
-    mergedPR: 77
-    openPR: 142
-    closedIssue: 20
-    openIssue: 21
-    commit: 263
+    since: 2026-10-29
+    release: 2
+    mergedPR: 80
+    openPR: 146
+    closedIssue: 19
+    openIssue: 20
+    commit: 272
   last60d:
-    since: 2026-09-28
+    since: 2026-09-29
     release: 6
-    mergedPR: 211
-    openPR: 208
+    mergedPR: 209
+    openPR: 212
     closedIssue: 47
-    openIssue: 42
-    commit: 568
+    openIssue: 43
+    commit: 577
   last90d:
-    since: 2026-08-29
+    since: 2026-08-30
     release: 6
-    mergedPR: 333
-    openPR: 257
+    mergedPR: 336
+    openPR: 262
     closedIssue: 66
-    openIssue: 52
-    commit: 962
+    openIssue: 53
+    commit: 971
   last180d:
-    since: 2026-05-31
+    since: 2026-06-01
     release: 9
-    mergedPR: 682
-    openPR: 352
-    closedIssue: 116
+    mergedPR: 680
+    openPR: 355
+    closedIssue: 115
     openIssue: 80
-    commit: 2113
+    commit: 2122
   last360d:
-    since: 2025-12-02
+    since: 2025-12-03
     release: 14
-    mergedPR: 1350
-    openPR: 408
-    closedIssue: 313
+    mergedPR: 1351
+    openPR: 413
+    closedIssue: 310
     openIssue: 112
-    commit: 4176
+    commit: 4185
   last720d:
-    since: 2024-12-07
+    since: 2024-12-08
     release: 21
-    mergedPR: 2462
-    openPR: 440
-    closedIssue: 827
+    mergedPR: 2465
+    openPR: 445
+    closedIssue: 828
     openIssue: 185
-    commit: 8345
+    commit: 8354
 total:
   release: 74
-  mergedPR: 17314
-  openPR: 473
-  closedIssue: 8936
+  mergedPR: 17318
+  openPR: 478
+  closedIssue: 8937
   openIssue: 352
-  commit: 51755
+  commit: 51764
 ---
 path: /home/runner/.x-repo/github.com/bitcoin/bitcoin
-collectedAt: 2026-11-27T10:37:55Z
+collectedAt: 2026-11-28T09:19:22Z
 loc:
   TypeScript:
     code: 286631
@@ -116,9 +116,9 @@ loc:
     blanks: 15679
     files: 677
   Python:
-    code: 72918
-    comments: 11054
-    blanks: 15406
+    code: 72966
+    comments: 11055
+    blanks: 15412
     files: 387
   Json:
     code: 39537
@@ -227,7 +227,7 @@ loc:
     files: 1
   Markdown:
     code: 0
-    comments: 33503
+    comments: 33504
     blanks: 8953
     files: 275
   Text:
@@ -236,9 +236,9 @@ loc:
     blanks: 5
     files: 6
 total:
-  code: 735465
-  comments: 117151
-  blanks: 77477
+  code: 735513
+  comments: 117153
+  blanks: 77483
   files: 2773
 ---
 date: "2026-11-23"
